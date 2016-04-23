@@ -1,4 +1,4 @@
-Logic = require("./Logic")
+var Logic = require("./Logic")
 
 module.exports = function() {
     var divisorLogic = [
@@ -17,6 +17,6 @@ module.exports = function() {
             out += input;
 
         return out;
-    }
-}
+    };
+};
 

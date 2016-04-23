@@ -1,4 +1,4 @@
-Logic = require("../Logic");
+var Logic = require("../Logic");
 
 describe("Logic", function() {
 
