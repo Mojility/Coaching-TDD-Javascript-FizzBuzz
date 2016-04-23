@@ -32,7 +32,7 @@ describe("Emitter", function() {
         expect(h.output(35)).toEqual("BuzzWoof");
     });
 
-    it("should emit BuzzWoof for 105 (3*5*7)", function() {
+    it("should emit FizzBuzzWoof for 105 (3*5*7)", function() {
         expect(h.output(105)).toEqual("FizzBuzzWoof");
     });
 });
