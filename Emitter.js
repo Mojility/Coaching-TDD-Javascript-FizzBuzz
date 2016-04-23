@@ -1,24 +1,22 @@
+Logic = require("./Logic")
+
 module.exports = function() {
-  this.main = function() {  
-  }
+  var divisorLogic = [
+    new Logic(3, "Fizz"),
+    new Logic(5, "Buzz"),
+    new Logic(7, "Woof")
+  ];
 
   this.output = function(input) {
-    var stringOutput = "";
+    var out = "";
 
-    if(input % 3 == 0)
-      stringOutput += "Fizz";
+    for(var i=0; i<divisorLogic.length; i++)
+      out += divisorLogic[i].output(input);
 
-    if(input % 5 == 0)
-      stringOutput += "Buzz";
+    if (out === "")
+      out += input
 
-    if(input % 7 == 0)
-      stringOutput += "Woof";
-
-    if (!stringOutput)
-      stringOutput += input;
-
-    return stringOutput;
+    return out;
   }
 }
-
 
