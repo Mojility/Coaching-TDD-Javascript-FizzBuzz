@@ -1,4 +1,4 @@
-Emitter = require("../Emitter");
+var Emitter = require("../Emitter");
 
 describe("Emitter", function() {
     var h = new Emitter();
