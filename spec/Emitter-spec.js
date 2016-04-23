@@ -19,5 +19,22 @@ describe("Emitter", function() {
   it("should emit FizzBuzz for 15", function() {
     expect(h.output(15)).toEqual("FizzBuzz");
   });
+
+  it("should emit Woof for 7", function() {
+    expect(h.output(7)).toEqual("Woof");
+  });
+
+  it("should emit FizzWoof for 21 (3*7)", function() {
+    expect(h.output(21)).toEqual("FizzWoof");
+  });
+
+  it("should emit BuzzWoof for 35 (5*7)", function() {
+    expect(h.output(35)).toEqual("BuzzWoof");
+  });
+
+  it("should emit BuzzWoof for 105 (3*5*7)", function() {
+    expect(h.output(105)).toEqual("FizzBuzzWoof");
+  });
 });
+
 
