@@ -8,7 +8,11 @@ describe("Emitter", function() {
     expect(h.output(2)).toEqual("2");
   });
 
-  it("should emit Fizz", function() {
+  it("should emit Fizz for 3", function() {
     expect(h.output(3)).toEqual("Fizz");
+  });
+
+  it("should emit Buzz for 5", function() {
+    expect(h.output(5)).toEqual("Buzz");
   });
 });

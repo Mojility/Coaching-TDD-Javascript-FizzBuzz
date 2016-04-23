@@ -1,13 +1,16 @@
 module.exports = function() {
-  this.main = function() {
+  this.main = function() {  
   }
 
   this.output = function(input) {
-    var out = "" + input;
+    var stringOutput = "" + input;
 
-    if (input == 3)
-      out = "Fizz";
+    if(input % 3 == 0)
+      stringOutput = "Fizz";
 
-    return out;
+    if(input % 5 == 0)
+      stringOutput = "Buzz";
+
+    return stringOutput;
   }
 }
