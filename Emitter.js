@@ -1,4 +1,5 @@
 module.exports = function() {
+
     this.output = function(input) {
         var stringOutput = "" + input;
 
@@ -10,4 +11,5 @@ module.exports = function() {
 
         return stringOutput;
     };
+    
 };
